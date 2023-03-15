@@ -137,7 +137,22 @@ JSX 사용법
 		document.getElementById('root')
 	);
 
+Elements란?
+	어떤 물체를 구성하는 성분
 
+React Element
+	Elements는 화면에서 보이는 것들을 기술
+
+
+Elements의 생김새
+	리액트 Elements는 자바스크립트 객체 형태로 존재
+
+
+React elements 특징
+	- 불변성
+		- 변하지 않는 성질
+		- elements 생성후에는 children이나 attributes를 바꿀 수 없다.
+	
 	
 
 
@@ -149,34 +164,11 @@ JSX 사용법
 
 
 
-import React from "react";
-
-function Book(props) {
-    return (
-        <div>
-            <h1>{`이 책의 이름은 ${props.name}입니다.`}</h1>
-            <h2>{`이 책은 총 ${props.numOfPage}페이지로 이뤄져 있습니다.`}</h2>
-        </div>
-    );
-}
-
-export default Book;
 
 
 
 
-import React from "react";
-import Book from "./Book";
 
-function Library(props) {
-    return (
-        <div>
-            <Book name="처음 만난 리액트" numOfPage={300}/>
-            <Book name="처음 만난 파이썬" numOfPage={400}/>
-            <Book name="처음 만난 AWS" numOfPage={500}/>
-        </div>
-    );
-}
 
-export default Library;
+
 			
